@@ -1,0 +1,12 @@
+---
+import "../styles/globals.css"
+import Layout from "../layouts/Layout.astro"
+import CardWithForm from "../components/ui/cards/cardwithform"
+---
+
+<Layout title="Welcome to Astro.">
+	<main>
+		<h1 class="bg-orange-600 text-2xl text-center">Welcome to Astro.</h1>
+		<CardWithForm client:idle />
+	</main>
+</Layout>

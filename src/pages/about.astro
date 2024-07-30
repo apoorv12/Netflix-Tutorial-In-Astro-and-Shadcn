@@ -1,0 +1,77 @@
+---
+import Layout from "../layouts/Layout.astro"
+import Columns from "@/components/columns/columns.astro"
+import Hero from "@/components/columns/hero.astro"
+---
+
+<Layout title="About">
+    <Hero />
+    <h1 class="text-4xl text-center py-4">Featured Products</h1>
+    <!-- This is a grid of featured products -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+        <!-- Each product is displayed in a card with a shadow and rounded corners -->
+        <div class="shadow-lg rounded-md">
+            <div class="overflow-hidden">
+                <!-- The image of the product is displayed in the card -->
+                <img
+                    class="rounded-md hover:scale-125 duration-1000"
+                    src="/Fruit juice flyer.png"
+                    alt=""
+                    srcset=""
+                />
+            </div>
+            <!-- The name of the product is displayed in a larger font -->
+            <p class="text-center text-2xl font-bold">Fruit juice</p>
+            <!-- The price of the product is displayed in the center -->
+            <p class="text-center">Rs.8000/-</p>
+        </div>
+        <div class="shadow-lg rounded-md">
+            <div class="overflow-hidden">
+                <img
+                    class="rounded-md hover:scale-125 duration-1000"
+                    src="/Fruit juice flyer.png"
+                    alt=""
+                    srcset=""
+                />
+            </div>
+            <p class="text-center text-2xl font-bold">Fruit juice</p>
+            <p class="text-center">Rs.8000/-</p>
+        </div>
+        <div class="shadow-lg rounded-md">
+            <div class="overflow-hidden">
+                <img
+                    class="rounded-md hover:scale-125 duration-1000"
+                    src="/Fruit juice flyer.png"
+                    alt=""
+                    srcset=""
+                />
+            </div>
+            <p class="text-center text-2xl font-bold">Fruit juice</p>
+            <p class="text-center">Rs.8000/-</p>
+        </div>
+        <div class="shadow-lg rounded-md">
+            <div class="overflow-hidden">
+                <img
+                    class="rounded-md hover:scale-125 duration-1000"
+                    src="/Fruit juice flyer.png"
+                    alt=""
+                    srcset=""
+                />
+            </div>
+            <p class="text-center text-2xl font-bold">Fruit juice</p>
+            <p class="text-center">Rs.8000/-</p>
+        </div>
+    </div>
+
+    <h2 class="text-4xl text-center mt-14">About Us</h2>
+    <div class="grid grid-cols-1 lg:grid-cols-4 gap-6 p-4 mt-6">
+        <Columns />
+        <Columns />
+        <Columns />
+        <Columns />
+        <Columns />
+        <Columns />
+        <Columns />
+        <Columns />
+    </div>
+</Layout>
